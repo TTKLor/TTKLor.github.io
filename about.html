@@ -9,6 +9,21 @@
       th {
         width: 300px;
       }
+      * {
+        box-sizing: border-box;
+      }
+      .column {
+        float: left;
+        width: 40%;
+        padding: 50px;
+      }
+      /* Clearfix (clear floats) */
+      .row::after{
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
     </style>
   </head>
   <body>
@@ -38,12 +53,25 @@
       I also <strong>love</strong> snakes. I have been fascinated with snakes ever since I was young. After college, when I live alone, I plan on getting a 
       blue eyed leucistic ball python. </p>
       
-  <img src="mybanner.jpg" alt="asian girl smiling" height="300">    
-  <img src="me.jpg" alt="asian girl in hmong clothes" height="300"> 
-  <img src="clinic.jpg" alt="girl holding cat" height="300">
-  <img src="princess.jpg" alt="black dog" height="300"><br>     
-  <img src="bts.jpg" alt="bts" height="300">    
-  <img src="snake.jpg" alt="white snake" height="300">
+  <div class="row">
+     <div class="column">
+       <img src="mybanner.jpg" alt="asian girl smiling">
+    </div>
+    <div class="column">
+        <img src="me.jpg" alt="asian girl in hmong clothes"> 
+     </div>
+    <div class="column">
+      <img src="clinic.jpg" alt="girl holding cat">
+    </div>
+    <div class="column">
+      <img src="princess.jpg" alt="black dog">
+    </div>
+    <div class="column">
+      <img src="bts.jpg" alt="bts"> 
+    </div>
+    <div class="column">
+      <img src="snake.jpg" alt="white snake">
+    </div>
         
     
   </body> 
